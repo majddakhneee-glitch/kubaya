@@ -1,0 +1,40 @@
+{
+  "categories": [
+    {
+      "id": "kibbeh",
+      "title": "كبة",
+      "icon": "svg_kibbeh",
+      "items": [
+        { "name": "كبة مقلية كبيرة مفرزة 6 قطعة", "price": 600 },
+        { "name": "كبة مشوية سواريه 12 قطع", "price": 650 },
+        { "name": "كبة لبنية 12 قطعة", "price": 600 },
+        { "name": "كبة مشوية كبيرة 6 قطعة", "price": 600 },
+        { "name": "كبة مبرومة", "customPrice": true },
+        { "name": "كبة مقلية", "customPrice": true }
+      ]
+    },
+    {
+      "id": "barak",
+      "title": "برك",
+      "icon": "fa-cheese",
+      "items": [
+        { "name": "برك لحمة 12قطعة", "price": 450 },
+        { "name": "برك جبنة حلوم 12 قطعة", "price": 400 },
+        { "name": "برك سبانخ", "price": 380 },
+        { "name": "برك شاورما 12 قطعة", "price": 450 },
+        { "name": "برك جبنة", "customPrice": true }
+      ]
+    },
+    {
+      "id": "others",
+      "title": "أصناف أخرى",
+      "icon": "fa-utensils",
+      "items": [
+        { "name": "شيشبرك 35 قطعة", "price": 380 },
+        { "name": "مسخن الدجاج 12 قطعة", "price": 380 },
+        { "name": "سمبوسة لحمة 12 قطعة", "price": 400 },
+        { "name": "سبرينغ رول خضار (12قطعة)", "price": 380 }
+      ]
+    }
+  ]
+}
