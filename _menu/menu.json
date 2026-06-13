@@ -78,6 +78,12 @@
         {
           "name": "سبرينغ رول خضار (12قطعة)",
           "price": 380
+        },
+        {
+          "customPrice": false,
+          "bestseller": false,
+          "name": "تجربة اكلة جديدة ",
+          "price": 12
         }
       ]
     }
