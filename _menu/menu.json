@@ -81,9 +81,9 @@
         },
         {
           "customPrice": false,
-          "bestseller": true,
-          "name": "لحمة",
-          "price": 30
+          "bestseller": false,
+          "name": "لحمة بالجبن محشية",
+          "price": 300
         }
       ]
     }
