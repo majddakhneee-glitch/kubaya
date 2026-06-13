@@ -5,7 +5,6 @@ backend:
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
-# تفعيل ترميز اليونيكود لضمان حفظ النصوص العربية بدون انقلاب الأقواس والفواصل
 slug:
   encoding: "unicode"
   clean_accents: false
@@ -16,7 +15,7 @@ collections:
     files:
       - name: site
         label: الإعدادات العامة
-        file: _menu/site.json
+        file: content/site.json
         format: json
         fields:
           - { label: اسم المتجر, name: brandTitle, widget: string }
@@ -31,7 +30,7 @@ collections:
     files:
       - name: menu
         label: ملف المنيو
-        file: _menu/menu.json
+        file: content/menu.json
         format: json
         fields:
           - label: الأقسام
