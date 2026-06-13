@@ -1,0 +1,46 @@
+backend:
+  name: netlify
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: site
+    label: إعدادات الموقع
+    files:
+      - name: site
+        label: الإعدادات العامة
+        file: content/site.json
+        format: json
+        fields:
+          - { label: اسم المتجر, name: brandTitle, widget: string }
+          - { label: العنوان الفرعي, name: brandSubtitle, widget: string }
+          - { label: رقم الهاتف, name: phoneNumber, widget: string }
+          - { label: رقم واتساب, name: whatsappNumber, widget: string }
+          - { label: عنوان الصفحة, name: pageTitle, widget: string }
+          - { label: لون الثيم, name: themeColor, widget: string }
+
+  - name: menu
+    label: المنيو
+    files:
+      - name: menu
+        label: ملف المنيو
+        file: content/menu.json
+        format: json
+        fields:
+          - label: الأقسام
+            name: categories
+            widget: list
+            fields:
+              - { label: ID, name: id, widget: string }
+              - { label: العنوان, name: title, widget: string }
+              - { label: الأيقونة, name: icon, widget: string }
+              - label: الأصناف
+                name: items
+                widget: list
+                fields:
+                  - { label: اسم الصنف, name: name, widget: string }
+                  - { label: السعر, name: price, widget: number, required: false, value_type: int }
+                  - { label: سعر مخصص, name: customPrice, widget: boolean, required: false, default: false }
+                  - { label: الأكثر طلباً, name: bestseller, widget: boolean, required: false, default: false }
