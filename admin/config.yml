@@ -5,6 +5,7 @@ backend:
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
+# حماية وترميز النصوص العربية لمنع تداخل الرموز البرمجية الإنجليزية
 slug:
   encoding: "unicode"
   clean_accents: false
@@ -37,6 +38,7 @@ collections:
             name: categories
             widget: list
             summary: '{{fields.title}}'
+            identifier_field: title
             fields:
               - { label: ID, name: id, widget: string }
               - { label: العنوان, name: title, widget: string }
@@ -44,7 +46,8 @@ collections:
               - label: الأصناف
                 name: items
                 widget: list
-                summary: '{{fields.name}} - {{fields.price}}'
+                summary: '{{fields.name}}'
+                identifier_field: name
                 fields:
                   - { label: اسم الصنف, name: name, widget: string }
                   - { label: السعر, name: price, widget: number, required: false, value_type: int }
