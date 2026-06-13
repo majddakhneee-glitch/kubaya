@@ -5,6 +5,11 @@ backend:
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
+# تفعيل ترميز اليونيكود لضمان حفظ النصوص العربية بدون انقلاب الأقواس والفواصل
+slug:
+  encoding: "unicode"
+  clean_accents: false
+
 collections:
   - name: site
     label: إعدادات الموقع
@@ -32,6 +37,7 @@ collections:
           - label: الأقسام
             name: categories
             widget: list
+            summary: '{{fields.title}}'
             fields:
               - { label: ID, name: id, widget: string }
               - { label: العنوان, name: title, widget: string }
@@ -39,6 +45,7 @@ collections:
               - label: الأصناف
                 name: items
                 widget: list
+                summary: '{{fields.name}} - {{fields.price}}'
                 fields:
                   - { label: اسم الصنف, name: name, widget: string }
                   - { label: السعر, name: price, widget: number, required: false, value_type: int }
