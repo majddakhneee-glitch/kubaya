@@ -1,6 +1,7 @@
-[[plugins]]
-  package = "@netlify/plugin-local-install"
-
 [build]
-  command = "mkdir -p _menu && echo '[' > _menu/index.json && (cat _menu/*.json | grep -v '^\[' | grep -v '^\]' | sed '$s/,$//') >> _menu/index.json && echo ']' >> _menu/index.json"
   publish = "."
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
